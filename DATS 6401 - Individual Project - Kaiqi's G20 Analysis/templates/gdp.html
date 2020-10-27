@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial=scale1.0">
+        <meta name="decription" content="G20-Charts">
+        <meta name="author" content="Kaiqi-Yu">
+        <title>Home</title>
+        <link rel="stylesheet" href="../static/css/index.css">
+
+        <script type="text/javascript" src="../static/js/jquery-3.3.1.min.js"></script>
+        <script type="text/javascript" src="../static/js/index.js"></script>
+
+        <script src="http://www.gstatic.com/charts/loader.js"></script>
+        <script type="text/javascript" src="../static/js/gdp.js"></script>
+    </head>
+    <body>
+        <div id="header">
+            <a href="index.html" class="logo" style="background: url(../static/img/logo.jpg) no-repeat;"></a>
+            <ul class="main-menu">
+                <span class="menu-line" hidden="hidden"></span>
+                <li class="main-menu-li"><a href="index.html"><span>Home</span></a></li>
+                <li class="main-menu-li selected"><a href="gdp.html"><span>GDP</span></a></li>
+                <li class="main-menu-li"><a href="educational.html"><span>Education</span></a></li>
+                <li class="main-menu-li"><a href="healthcare.html"><span>Healthcare</span></a></li>
+                <li class="main-menu-li"><a href="military.html"><span>Military</span></a></li>
+                <li class="main-menu-li"><a href="others.html"><span>Others</span></a></li>
+            </ul>
+        </div><!-- header -->
+        <div id="container">
+            <div id="content">
+                <div id="gdp_chart_1"></div>
+                <div id="gdp_chart_2"></div>
+                <div id="gdp_chart_3"></div>
+                <div id="gdp_chart_4"></div>
+
+                <div class="row2">
+                    <div class = "col-sm-6">
+                        <form>
+                            <div class="form-dropdown1">
+                            <label for="sel1">Country</label>
+                            <select class="form-control" id="Dropdown">
+                                <optgroup label="Country">
+                                    <option value="IND" id="IND">IND</option>
+                                    <option value="CHN" id="CHN">CHN</option>
+                                    <option value="CAN" id="CAN">CAN</option>
+                                    <option value="USA" id="USA">USA</option>
+                                    <option value="GBR" id="GBR">GBR</option>
+                                    <option value="JPN" id="JPN">JPN</option>
+                                    <option value="ITA" id="ITA">ITA</option>
+                                    <option value="DEU" id="DEU">DEU</option>
+                                    <option value="BRA" id="BRA">BRA</option>
+                                    <option value="AUS" id="AUS">AUS</option>
+                                    <option value="FRA" id="FRA">FRA</option>
+                                </optgroup>
+                            </select>
+                            </div>
+                        </form>
+                    </div>
+                    <div id="IND_spending_div"></div>
+                    <div id="CHN_spending_div"></div>
+                    <div id="CAN_spending_div"></div>
+                    <div id="USA_spending_div"></div>
+                    <div id="GBR_spending_div"></div>
+                    <div id="JPN_spending_div"></div>
+                    <div id="ITA_spending_div"></div>
+                    <div id="DEU_spending_div"></div>
+                    <div id="BRA_spending_div"></div>
+                    <div id="AUS_spending_div"></div>
+                    <div id="FRA_spending_div"></div>
+                </div>
+            </div><!-- content -->
+        </div><!-- container -->
+        <div id="footer">
+                Copyright &copy; 2020. G20 Charts | Developed by Kaiqi Yu</p>
+        </div><!-- footer -->
+    </body>
+</html>

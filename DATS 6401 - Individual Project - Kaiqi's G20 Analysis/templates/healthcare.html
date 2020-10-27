@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial=scale1.0">
+        <meta name="decription" content="G20-Charts">
+        <meta name="author" content="Kaiqi-Yu">
+        <title>Home</title>
+        <link rel="stylesheet" href="../static/css/index.css">
+
+        <script type="text/javascript" src="../static/js/jquery-3.3.1.min.js"></script>
+        <script type="text/javascript" src="../static/js/index.js"></script>
+
+        <script src="http://www.gstatic.com/charts/loader.js"></script>
+        <script type="text/javascript" src="../static/js/healthcare.js"></script>
+    </head>
+    <body>
+        <div id="header">
+            <a href="index.html" class="logo" style="background: url(../static/img/logo.jpg) no-repeat;"></a>
+            <ul class="main-menu">
+                <span class="menu-line" hidden="hidden"></span>
+                <li class="main-menu-li"><a href="index.html"><span>Home</span></a></li>
+                <li class="main-menu-li"><a href="gdp.html"><span>GDP</span></a></li>
+                <li class="main-menu-li"><a href="educational.html"><span>Education</span></a></li>
+                <li class="main-menu-li selected"><a href="healthcare.html"><span>Healthcare</span></a></li>
+                <li class="main-menu-li"><a href="military.html"><span>Military</span></a></li>
+                <li class="main-menu-li"><a href="others.html"><span>Others</span></a></li>
+            </ul>
+        </div><!-- header -->
+        <div id="container">
+            <div id="content">
+                <div class = "col-md-6">
+                    <form>
+                        <div class="form-dropdown2" style="margin: 0px 0 0 400px;">
+                        <select class="select-one" id="Dropdown">
+                            <optgroup label="Healthcare_Option">
+                                <option value="GDP_Percent" id="GDP_Percent">GDP_Percent</option>
+                                <option value="Total" id="Total">Total</option>
+                                <option value="Per_Captia" id="Per_Captia">Per_Captia</option>
+                            </optgroup>
+                        </select>
+                        </div>
+                    </form>
+                </div>
+        
+                <div class="charts">
+                    <div id="heal_percent_div"></div>
+                    <div id="totalHealthcare_div"></div>
+                    <div id="heal_per_captia_div"></div>
+                    
+                    <div id="growth_gdp_heal_div"></div>
+                    <div id="growth_total_heal_div"></div>
+                    <div id="growth_percap_heal_div"></div>
+                </div>
+            </div><!-- content -->
+        </div><!-- container -->
+        <div id="footer">
+                Copyright &copy; 2020. G20 Charts | Developed by Kaiqi Yu</p>
+        </div><!-- footer -->
+    </body>
+</html>
